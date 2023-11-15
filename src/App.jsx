@@ -64,7 +64,7 @@ const App = () => {
       </header>
       {/* modal menu */}
       {modal && (
-        <div className="absolute top-0 w-full h-screen overflow-y-hidden bg-white py-[11px] px-[33px]">
+        <div className="absolute top-0 w-full h-screen overflow-y-hidden bg-white py-[9px] px-[35px]">
           <div className="flex justify-end">
             <button onClick={() => setModal(false)} className="text-[32px]">
               <IoClose />
