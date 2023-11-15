@@ -40,7 +40,7 @@ const App = () => {
         {/* info */}
         <div className="md:max-w-[1000px] max-w-[550px] mx-auto px-[25px] py-[40px] gap-[40px] md:gap-0 md:py-[80px] flex flex-col-reverse md:grid md:grid-cols-2">
           <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
-            <p className="md:text-[56px] text-[42px] font-[700] leading-[44px] md:leading-[70px]">
+            <p className="md:text-[56px] text-[38px] font-[700] leading-[44px] md:leading-[70px]">
               Front-End React Developer
             </p>
             <p className="text-[#555] md:text-[17px] text-[14px] md:px-0 px-[20px] font-[500]">
