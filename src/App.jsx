@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className="text-[#2d2e32]">
       {/* Nav */}
-      <nav className="shadow-md flex justify-between px-[35px] py-[10px]">
+      <nav className="shadow-[0px_0px_10px_0.1px] shadow-black/10 flex justify-between fixed top-0 w-full px-[35px] py-[10px] bg-nav">
         <a href="#" className="text-[22px] font-[700]">
           Galib.dev
         </a>
@@ -38,12 +38,12 @@ const App = () => {
       {/* Header */}
       <header>
         {/* info */}
-        <div className="md:max-w-[1000px] max-w-[550px] mx-auto px-[25px] py-[40px] gap-[40px] md:gap-0 md:py-[80px] flex flex-col-reverse md:grid md:grid-cols-2">
+        <div className="md:max-w-[1000px] max-w-[550px] mt-[70px] mx-auto px-[25px] py-[40px] gap-[40px] md:gap-0 md:py-[80px] flex flex-col-reverse md:grid md:grid-cols-2">
           <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
             <p className="md:text-[56px] text-[38px] font-[700] leading-[44px] md:leading-[70px]">
               Front-End React Developer
             </p>
-            <p className="text-[#555] md:text-[17px] text-[14px] md:px-0 px-[20px] font-[500]">
+            <p className="text-[#555] md:text-[17px] text-[15px] md:px-0 px-[20px] font-[500]">
               Hi, I'm Galib Ibragimov. A passionate Front-end React Developer
               based in Tajikistan, Dushanbe.
             </p>

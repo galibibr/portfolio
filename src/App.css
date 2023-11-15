@@ -26,3 +26,10 @@
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
    }
 }
+
+.bg-nav {
+   transform: translateZ(0);
+   -webkit-backdrop-filter: saturate(180%) blur(5px);
+   backdrop-filter: saturate(180%) blur(5px);
+   background: hsla(0, 0%, 100%, .8);
+}
