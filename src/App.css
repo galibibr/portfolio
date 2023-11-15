@@ -2,7 +2,7 @@
    background-image: url('assets/Me.png');
    width: 350px;
    height: 350px;
-   animation: profile__animate 8s ease-in-out infinite 1s;
+   animation: profile__animate 8s ease-in-out infinite;
    background-repeat: no-repeat;
    background-size: cover;
    border: 4px solid #2d2e32;

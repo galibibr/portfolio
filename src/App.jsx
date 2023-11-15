@@ -1,10 +1,14 @@
-import React from 'react'
-import './App.css'
+import React, { useState } from "react";
+import "./App.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiOutlineMenu } from "react-icons/hi";
+import { IoClose } from 'react-icons/io5'
 
 // text color #2d2e32
 
 const App = () => {
+  const [modal, setModal] = useState(false);
+
   return (
     <div className="text-[#2d2e32]">
       {/* Nav */}
@@ -12,7 +16,7 @@ const App = () => {
         <a href="#" className="text-[22px] font-[700]">
           Galib.dev
         </a>
-        <ul className="flex items-center gap-[20px] text-[18px] font-[600]">
+        <ul className="hidden md:flex items-center gap-[20px] text-[18px] font-[600]">
           <li>
             <a href="#">Home</a>
           </li>
@@ -26,6 +30,10 @@ const App = () => {
             <a href="#">Contacts</a>
           </li>
         </ul>
+        {/* menu */}
+        <button onClick={() => setModal(true)} className="text-[28px] flex md:hidden">
+          <HiOutlineMenu />
+        </button>
       </nav>
       {/* Header */}
       <header>
@@ -39,7 +47,7 @@ const App = () => {
               Hi, I'm Galib Ibragimov. A passionate Front-end React Developer
               based in Tajikistan, Dushanbe.
             </p>
-            <div className='flex gap-2 text-[24px] md:text-[30px]'>
+            <div className="flex gap-2 text-[24px] md:text-[30px]">
               <a href="#">
                 <FaLinkedinIn />
               </a>
@@ -54,8 +62,32 @@ const App = () => {
         </div>
         {/* stack */}
       </header>
+      {/* modal menu */}
+      {modal && (
+        <div className="absolute top-0 w-full h-screen overflow-y-hidden bg-white py-[11px] px-[33px]">
+          <div className="flex justify-end">
+            <button onClick={() => setModal(false)} className="text-[32px]">
+              <IoClose />
+            </button>
+          </div>
+          <ul className="flex flex-col items-center justify-center h-full gap-[30px] text-[24px] font-[600]">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
-}
+};
 
-export default App
+export default App;
