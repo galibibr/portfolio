@@ -10,7 +10,7 @@ const App = () => {
   const [modal, setModal] = useState(false);
 
   return (
-    <div className="text-[#2d2e32]">
+    <div className={`text-[#2d2e32] ${modal ? 'overflow-hidden' : 'overflow-auto'}`}>
       {/* Nav */}
       <nav className="shadow-[0px_0px_10px_0.1px] shadow-black/10 flex justify-between fixed top-0 w-full px-[35px] py-[10px] bg-nav">
         <a href="#" className="text-[22px] font-[700]">
@@ -66,7 +66,7 @@ const App = () => {
       </header>
       {/* modal menu */}
       {modal && (
-        <div className="absolute top-0 w-full h-screen overflow-y-hidden bg-white py-[9px] px-[35px]">
+        <div className="fixed top-0 z-20 w-full h-screen overflow-y-hidden bg-white py-[9px] px-[35px]">
           <div className="flex justify-end">
             <button onClick={() => setModal(false)} className="text-[32px]">
               <IoClose />
