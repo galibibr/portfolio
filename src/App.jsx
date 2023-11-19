@@ -3,6 +3,7 @@ import "./App.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import { FaTelegramPlane } from "react-icons/fa";
 
 // text color #2d2e32
 
@@ -10,30 +11,49 @@ const App = () => {
   const [modal, setModal] = useState(false);
 
   return (
-    <div className={`text-[#2d2e32] ${modal ? 'overflow-hidden' : 'overflow-auto'}`}>
+    <div
+      className={`text-[#2d2e32] ${
+        modal ? "overflow-hidden" : "overflow-auto"
+      }`}>
       {/* Nav */}
       <nav className="shadow-[0px_0px_10px_0.1px] shadow-black/10 flex justify-between fixed top-0 w-full px-[35px] py-[10px] bg-nav">
-        <a href="#" className="text-[22px] font-[700]">
+        <a href="/" className="text-[22px] font-[700]">
           Galib.dev
         </a>
         <ul className="hidden md:flex items-center gap-[20px] text-[18px] font-[600]">
           <li>
-            <a href="#">Home</a>
+            <a
+              className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
+              href="#">
+              Home
+            </a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a
+              className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
+              href="#">
+              About
+            </a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a
+              className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
+              href="#">
+              Projects
+            </a>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <a
+              className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
+              href="#">
+              Contacts
+            </a>
           </li>
         </ul>
         {/* menu */}
         <button
           onClick={() => setModal(true)}
-          className="text-[28px] flex md:hidden">
+          className="text-[28px] flex md:hidden hover:text-black hover:scale-[0.90] duration-200">
           <HiOutlineMenu />
         </button>
       </nav>
@@ -49,12 +69,26 @@ const App = () => {
               Hi, I'm Galib Ibragimov. A passionate Front-end React Developer
               based in Tajikistan, Dushanbe.
             </p>
-            <div className="flex gap-2 text-[24px] md:text-[30px]">
-              <a href="#">
-                <FaLinkedinIn />
-              </a>
-              <a href="#">
-                <FaGithub />
+            <div className="flex items-center gap-[20px]">
+              <div className="flex gap-2 text-[24px] md:text-[30px]">
+                <a
+                  href="#"
+                  className="hover:text-black hover:scale-[0.90] duration-200">
+                  <FaLinkedinIn />
+                </a>
+                <a
+                  href="https://github.com/galibibr"
+                  target="_blank"
+                  className="hover:text-black hover:scale-[0.90] duration-200">
+                  <FaGithub />
+                </a>
+              </div>
+              <a
+                href="https://t.me/galibibr"
+                target="_blank"
+                className="bg-[#2d2e32] text-white flex items-center px-[16px] py-[10px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
+                <p className="font-[600]">Say Hello</p>
+                <FaTelegramPlane />
               </a>
             </div>
           </div>
@@ -68,7 +102,9 @@ const App = () => {
       {modal && (
         <div className="fixed top-0 z-20 w-full h-screen overflow-y-hidden bg-white py-[9px] px-[35px]">
           <div className="flex justify-end">
-            <button onClick={() => setModal(false)} className="text-[32px]">
+            <button
+              onClick={() => setModal(false)}
+              className="text-[32px]  hover:text-black hover:scale-[0.90] duration-200">
               <IoClose />
             </button>
           </div>
@@ -126,6 +162,22 @@ const App = () => {
             </div>
           </div>
           <div className="grid grid-cols-3 gap-[10px] items-center">
+            <p className="">Redux</p>
+            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
+              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[70%]">
+                65%
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-[10px] items-center">
+            <p className="">REST / API</p>
+            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
+              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[70%]">
+                65%
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-[10px] items-center">
             <p className="">TypeScript</p>
             <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
               <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[55%]">
@@ -177,7 +229,7 @@ const App = () => {
             <p className="">Next.js</p>
             <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
               <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[55%]">
-                55
+                55%
               </div>
             </div>
           </div>
