@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "./App.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
-import { IoClose } from 'react-icons/io5'
+import { IoClose } from "react-icons/io5";
+import Skill from "./components/Skill";
 
 // text color #2d2e32
 
@@ -31,12 +32,14 @@ const App = () => {
           </li>
         </ul>
         {/* menu */}
-        <button onClick={() => setModal(true)} className="text-[28px] flex md:hidden">
+        <button
+          onClick={() => setModal(true)}
+          className="text-[28px] flex md:hidden">
           <HiOutlineMenu />
         </button>
       </nav>
       {/* Header */}
-      <header>
+      <header className="min-h-screen">
         {/* info */}
         <div className="md:max-w-[1000px] max-w-[550px] mt-[70px] mx-auto px-[25px] py-[40px] gap-[40px] md:gap-0 md:py-[80px] flex flex-col-reverse md:grid md:grid-cols-2">
           <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
@@ -86,6 +89,24 @@ const App = () => {
           </ul>
         </div>
       )}
+      {/* Skills */}
+      <section className="pb-[50px] px-[35px] max-w-[550px] mx-auto">
+        <h2 className="text-center text-[28px] font-[600]">Skills</h2>
+        <p className="text-center">My technical lavel</p>
+        <div className="mt-[20px] border rounded-[20px] bg-white p-[20px] md:p-[30px]">
+          <Skill skill={"HTML"} progress={'85'}/>
+          <Skill skill={"CSS"} progress={'80'}/>
+          <Skill skill={"JavaScript"} progress={'75'}/>
+          <Skill skill={"React"} progress={'70'}/>
+          <Skill skill={"TypeScript"} progress={'55'}/>
+          <Skill skill={"Git"} progress={'70'}/>
+          <Skill skill={"Tailwind"} progress={'80'}/>
+          <Skill skill={"SASS"} progress={'75'}/>
+          <Skill skill={"MUI"} progress={'65'}/>
+          <Skill skill={"Ant D"} progress={'70'}/>
+          <Skill skill={"Next.js"} progress={'55'}/>
+        </div>
+      </section>
     </div>
   );
 };
