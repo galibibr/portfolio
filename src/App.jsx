@@ -177,7 +177,7 @@ const App = () => {
             </p>
             <div className="flex justify-center md:justify-start">
               <a
-                href="#"
+                href="/src/assets/Galib Ibragimov CV .pdf" download
                 className="bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
                 <p className="font-[600]">Download CV</p>
                 <FaSheetPlastic className="text-[20px]"/>
