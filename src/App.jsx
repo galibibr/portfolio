@@ -72,7 +72,7 @@ const App = () => {
       {/* Header */}
       <header>
         {/* info */}
-        <div className="md:max-w-[1000px] max-w-[550px] mt-[100px] mx-auto px-[25px] gap-[40px] md:gap-0 py-[80px] flex flex-col-reverse md:grid md:grid-cols-2">
+        <div className="md:max-w-[1000px] max-w-[550px] mt-[100px] mx-auto px-[25px] gap-[40px] md:gap-0 md:py-[80px] mb-[80px] md:mb-[80px] flex flex-col-reverse md:grid md:grid-cols-2">
           <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
             <p className="md:text-[56px] text-[38px] font-[700] leading-[44px] md:leading-[70px]">
               Front-End React Developer
@@ -140,7 +140,7 @@ const App = () => {
         </div>
       )}
       {/* About me */}
-      <section className="max-w-[1000px] mx-auto px-[25px] border mb-[50px]">
+      <section className="max-w-[1000px] mx-auto px-[25px] mb-[50px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">About Me</p>
         <p className="text-center">My introduction</p>
         <div className="grid md:gap-0 gap-[40px] md:grid-cols-2 py-[40px] md:py-[60px]">
