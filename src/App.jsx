@@ -72,7 +72,7 @@ const App = () => {
       {/* Header */}
       <header>
         {/* info */}
-        <div className="md:max-w-[1000px] max-w-[550px] mt-[100px] mx-auto px-[25px] gap-[40px] md:gap-0 md:py-[80px] mb-[80px] md:mb-[80px] flex flex-col-reverse md:grid md:grid-cols-2">
+        <div className="md:max-w-[1000px] max-w-[550px] mt-[100px] mx-auto px-[25px] gap-[40px] md:gap-0 md:py-[80px] mb-[100px] flex flex-col-reverse md:grid md:grid-cols-2">
           <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
             <p className="md:text-[56px] text-[38px] font-[700] leading-[44px] md:leading-[70px]">
               Front-End React Developer
@@ -112,7 +112,7 @@ const App = () => {
       </header>
       {/* modal menu */}
       {modal && (
-        <div className="fixed top-0 z-20 w-full h-screen overflow-y-hidden bg-white py-[9px] px-[35px]">
+        <div className="fixed top-0 z-30 w-full h-screen overflow-y-hidden bg-white py-[9px] px-[35px]">
           <div className="flex justify-end">
             <button
               onClick={() => setModal(false)}
@@ -154,19 +154,19 @@ const App = () => {
           <div className="flex flex-col justify-between gap-[25px] md:gap-0 text-center md:text-start">
             <div className="grid grid-cols-3 gap-[10px]">
               <div className="border rounded-[8px] p-[20px] flex bg-white flex-col items-center">
-                <PiMedal className="text-[24px]" />
-                <p className="font-[600] text-[18px] mt-[4px]">Experience</p>
-                <p className="text-[14px] text-center">3 + Years</p>
+                <PiMedal className="text-[20px] md:text-[24px]" />
+                <p className="font-[600] md:text-[18px] mt-[4px]">Experience</p>
+                <p className="md:text-[14px] text-[11px] text-center w-full">3 + Years</p>
               </div>
               <div className="border rounded-[8px] p-[20px] flex bg-white flex-col items-center">
-                <MdOutlineWorkOutline className="text-[24px]" />
-                <p className="font-[600] text-[18px] mt-[4px]">Experience</p>
-                <p className="text-[14px] text-center">14 + Projects</p>
+                <MdOutlineWorkOutline className="text-[20px] md:text-[24px]" />
+                <p className="font-[600] md:text-[18px] mt-[4px]">Completed</p>
+                <p className="md:text-[14px] text-[11px] text-center w-full">14 + Projects</p>
               </div>
               <div className="border rounded-[8px] p-[20px] flex bg-white flex-col items-center">
-                <BiSupport className="text-[24px]" />
-                <p className="font-[600] text-[18px] mt-[4px]">Experience</p>
-                <p className="text-[14px] text-center">Online 24/7</p>
+                <BiSupport className="text-[20px] md:text-[24px]" />
+                <p className="font-[600] md:text-[18px] mt-[4px]">Support</p>
+                <p className="md:text-[14px] text-[11px] text-center w-full">Online 24/7</p>
               </div>
             </div>
             <p>
