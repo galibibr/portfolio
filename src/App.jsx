@@ -206,7 +206,7 @@ const App = () => {
           Skills
         </p>
         <p className="text-center">My technical lavel</p>
-        <div className="my-[40px] md:pm-[60px] border bg-white rounded-[20px] p-[30px] grid md:grid-cols-2 gap-x-[35px] gap-y-[15px] md:gap-y-0">
+        <div className="my-[40px] md:pm-[60px] border bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
           <div className="flex flex-col gap-[15px]">
             <Skill name="HTML" percent={80} />
             <Skill name="CSS" percent={85} />
