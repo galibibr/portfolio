@@ -307,7 +307,7 @@ const App = () => {
                 <div className="w-full bg-[#2d2e32] p-[2px] rounded-full">
                   <div className="rounded-full bg-white">
                     <div
-                      className={`w-[80%] bg-[#2d2e32] p-[3px]`}></div>
+                      className={`w-[50%] bg-[#2d2e32] p-[3px]`}></div>
                   </div>
                 </div>
                 <p className="text-[14px] leading-[0px]">80%</p>
