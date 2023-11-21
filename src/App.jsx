@@ -11,6 +11,8 @@ import { BiSupport } from "react-icons/bi";
 import { FaSheetPlastic } from "react-icons/fa6";
 import myCV from "./assets/Galib Ibragimov CV .pdf";
 import Skill from "./components/Skill";
+import { BsFillPatchCheckFill } from "react-icons/bs";
+
 
 // text color #2d2e32
 
@@ -205,7 +207,7 @@ const App = () => {
         </p>
         <p className="text-center">My technical lavel</p>
         <div className="my-[40px] md:pm-[60px] border bg-white rounded-[20px] p-[30px] grid md:grid-cols-2 gap-x-[35px] gap-y-[15px] md:gap-y-0">
-          <div className="flex flex-col gap-[10px]">
+          <div className="flex flex-col gap-[15px]">
             <Skill name="HTML" percent={80} />
             <Skill name="CSS" percent={85} />
             <Skill name="SASS" percent={75} />
@@ -221,6 +223,21 @@ const App = () => {
             <Skill name="REST / API" percent={80} />
             <Skill name="TypeScript" percent={55} />
             <Skill name="Next.js" percent={50} />
+            <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
+              <div className="col-start-1 row-start-1 row-end-2 px-[10px] flex items-center">
+                <BsFillPatchCheckFill />
+              </div>
+              <p className="col-start-2 text-[18px] font-[600]">sss</p>
+              <div className="col-start-2 row-start-2 flex items-center gap-[5px]">
+                <div className="w-full bg-[#2d2e32] p-[2px] rounded-full">
+                  <div className="rounded-full bg-white">
+                    <div
+                      className={`w-[55%] bg-[#2d2e32] p-[3px]`}></div>
+                  </div>
+                </div>
+                <p className="text-[14px] leading-[0px]">55%</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
