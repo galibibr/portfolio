@@ -4,7 +4,7 @@ import { BsFillPatchCheckFill } from "react-icons/bs";
 const Skill = ({name, percent}) => {
   return (
     <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
-      <div className="col-start-1 row-start-1 row-end-2 px-[10px] flex items-center">
+      <div className="col-start-1 row-start-1 row-end-2 pr-[10px] flex items-center">
         <BsFillPatchCheckFill />
       </div>
       <p className="col-start-2 text-[18px] font-[600]">{name}</p>

@@ -223,7 +223,7 @@ const App = () => {
             <Skill name="REST / API" percent={80} />
             <Skill name="TypeScript" percent={55} />
             <Skill name="Next.js" percent={50} />
-            <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
+            {/* <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
               <div className="col-start-1 row-start-1 row-end-2 px-[10px] flex items-center">
                 <BsFillPatchCheckFill />
               </div>
@@ -342,7 +342,7 @@ const App = () => {
                 </div>
                 <p className="text-[14px] leading-[0px]">85%</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
