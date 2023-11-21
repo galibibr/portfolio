@@ -9,6 +9,7 @@ import { PiMedal } from "react-icons/pi";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { FaSheetPlastic } from "react-icons/fa6";
+import myCV from "./assets/Galib Ibragimov CV .pdf";
 
 // text color #2d2e32
 
@@ -185,8 +186,8 @@ const App = () => {
             </p>
             <div className="flex justify-center md:justify-start">
               <a
-                href="/src/assets/Galib Ibragimov CV .pdf"
-                download="/src/assets/Galib Ibragimov CV .pdf"
+                href={myCV}
+                download={myCV}
                 className="bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
                 <p className="font-[600]">Download CV</p>
                 <FaSheetPlastic className="text-[20px]" />
@@ -307,6 +308,16 @@ const App = () => {
           </div>
         </div>
       </section> */}
+
+      {/* <div className="p-[50px] bg-black/10">
+        <div className="border w-[300px] h-[250px] overflow-hidden relative ee">
+          <img
+          className="pr"
+            src="https://www.stefantopalovic.com/static/media/car-rental-full.c58b37da333d73238fdd.webp"
+            alt=""
+          />
+        </div>
+      </div> */}
     </div>
   );
 };

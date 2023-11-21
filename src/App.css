@@ -52,5 +52,15 @@ body::-webkit-scrollbar-thumb {
    transition:  10s ease-in-out 0s;
 }
 .pr:hover {
-   transform: translateY(-100%);
+   transform: translateY(-90%);
+} */
+
+/* .ee::-webkit-scrollbar {
+   width: 8px;
+   background: white;
+}
+
+.ee::-webkit-scrollbar-thumb {
+   background: #929292;
+   border-radius: 10px;
 } */
