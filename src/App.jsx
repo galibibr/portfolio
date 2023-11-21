@@ -10,6 +10,7 @@ import { MdOutlineWorkOutline } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { FaSheetPlastic } from "react-icons/fa6";
 import myCV from "./assets/Galib Ibragimov CV .pdf";
+import Skill from "./components/Skill";
 
 // text color #2d2e32
 
@@ -198,116 +199,31 @@ const App = () => {
       </section>
 
       {/* Skills */}
-      {/* <section className="pb-[50px] px-[35px] max-w-[550px] mx-auto mt-[100px]">
-        <h2 className="text-center text-[38px] font-[600]">Skills</h2>
+      <section className="max-w-[1000px] px-[25px] mx-auto mt-[80px] md:mt-[150px]">
+        <p className="text-center md:text-[38px] text-[30px] font-[600]">
+          Skills
+        </p>
         <p className="text-center">My technical lavel</p>
-        <div className="mt-[20px] border rounded-[20px] bg-white p-[20px] md:p-[30px]">
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">HTML</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[85%]">
-                85%
-              </div>
-            </div>
+        <div className="my-[40px] md:pm-[60px] border bg-white rounded-[20px] p-[30px] grid md:grid-cols-2 gap-x-[35px] gap-y-[15px] md:gap-y-0">
+          <div className="flex flex-col gap-[10px]">
+            <Skill name="HTML" percent={80} />
+            <Skill name="CSS" percent={85} />
+            <Skill name="SASS" percent={75} />
+            <Skill name="JavaScript" percent={75} />
+            <Skill name="React" percent={70} />
+            <Skill name="Redux" percent={70} />
+            <Skill name="Git" percent={80} />
           </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">CSS</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[80%]">
-                80%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">JavaScript</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[75%]">
-                75%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">React</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[70%]">
-                70%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">Redux</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[70%]">
-                65%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">REST / API</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[70%]">
-                65%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">TypeScript</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[55%]">
-                55%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">Git</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[70%]">
-                70%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">Tailwind</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[80%]">
-                80%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">SASS</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[75%]">
-                75%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">MUI</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[65%]">
-                65%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">AntD</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[70%]">
-                70%
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-3 gap-[10px] items-center">
-            <p className="">Next.js</p>
-            <div className="bg-black/20 rounded-[10px] my-2 relative col-span-2">
-              <div className="bg-[#2d2e32] text-white text-center text-[12px] rounded-[10px_0_0px_10px] h-full w-[55%]">
-                55%
-              </div>
-            </div>
+          <div className="flex flex-col gap-[15px]">
+            <Skill name="Tailwind" percent={85} />
+            <Skill name="Material Design" percent={70} />
+            <Skill name="Ant Design" percent={65} />
+            <Skill name="REST / API" percent={80} />
+            <Skill name="TypeScript" percent={55} />
+            <Skill name="Next.js" percent={50} />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* <div className="p-[50px] bg-black/10">
         <div className="border w-[300px] h-[250px] overflow-hidden relative ee">
