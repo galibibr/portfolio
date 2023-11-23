@@ -373,11 +373,11 @@ const App = () => {
             <a
               href="https://next-store-amazon.vercel.app/"
               target="_blank"
-              className="w-auto h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
               <img src={amazon2} className="img-amazon" alt="amazon web" />
             </a>
             {/* info */}
-            <div className="text-center flex md:text-[17px] pt-[20px] px-[20px] gap-[8px] flex-col justify-around md:pl-[40px] md:pr-[20px]">
+            <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pl-[40px] md:pr-[20px]">
               <p>
                 <b>AMAZON</b>{" "}
                 <span className="text-[14px]">(OCTOBER 2023)</span>
