@@ -5,6 +5,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { FaTelegramPlane } from "react-icons/fa";
 import myImg from "./assets/Me.png";
+import myImg2 from "./assets/0011.jpg";
 import { PiMedal } from "react-icons/pi";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
@@ -18,6 +19,10 @@ import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { PiStudentBold } from "react-icons/pi";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import { MdOutlineAttachEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
+import { PiTelegramLogoBold } from "react-icons/pi";
+
 
 // text color #2d2e32
 
@@ -38,35 +43,35 @@ const App = () => {
           <li>
             <a
               className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
-              href="#">
+              href="#home">
               Home
             </a>
           </li>
           <li>
             <a
               className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
-              href="#">
+              href="#about">
               About
             </a>
           </li>
           <li>
             <a
               className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
-              href="#">
+              href="#skills">
               Skills
             </a>
           </li>
           <li>
             <a
               className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
-              href="#">
+              href="#projects">
               Projects
             </a>
           </li>
           <li>
             <a
               className="text-[#2d2e32]/80 hover:text-black hover:font-[600] hover:scale-[0.90] duration-200"
-              href="#">
+              href="#contacts">
               Contacts
             </a>
           </li>
@@ -79,7 +84,7 @@ const App = () => {
         </button>
       </nav>
       {/* Header */}
-      <header className="min-h-screen pt-[100px] pb-[30px] md:pb-0">
+      <header id="home" className="min-h-screen pt-[100px]">
         {/* info */}
         <div className="md:max-w-[1000px] max-w-[550px] mx-auto px-[25px] gap-[40px] md:gap-0 md:py-[80px] mb-[100px] flex flex-col-reverse md:grid md:grid-cols-2">
           <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
@@ -94,20 +99,20 @@ const App = () => {
               <div className="flex gap-2 text-[24px] md:text-[30px]">
                 <a
                   href="#"
-                  className="hover:text-black hover:scale-[0.90] duration-200">
+                  className="hover:text-black hover:scale-[1.1] duration-200">
                   <FaLinkedinIn />
                 </a>
                 <a
                   href="https://github.com/galibibr"
                   target="_blank"
-                  className="hover:text-black hover:scale-[0.90] duration-200">
+                  className="hover:text-black hover:scale-[1.1] duration-200">
                   <FaGithub />
                 </a>
               </div>
               <a
                 href="https://t.me/galibibr"
                 target="_blank"
-                className="div-shadow bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
+                className="div-shadow bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[1.05] duration-200">
                 <p className="font-[600]">Say Hello</p>
                 <FaTelegramPlane className="text-[20px]" />
               </a>
@@ -131,25 +136,25 @@ const App = () => {
           </div>
           <ul className="flex flex-col items-center justify-center h-full gap-[30px] text-[24px] font-[600]">
             <li>
-              <a href="#">Home</a>
+              <a href="#home" onClick={() => setModal(false)}>Home</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#about" onClick={() => setModal(false)}>About</a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a href="#skills" onClick={() => setModal(false)}>Skills</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects" onClick={() => setModal(false)}>Projects</a>
             </li>
             <li>
-              <a href="#">Contacts</a>
+              <a href="#contacts" onClick={() => setModal(false)}>Contacts</a>
             </li>
           </ul>
         </div>
       )}
       {/* About me */}
-      <section className="md:max-w-[1000px] max-w-[550px] mx-auto px-[25px] mb-[50px]">
+      <section id="about" className="md:max-w-[1000px] pt-[60px] max-w-[550px] mx-auto px-[25px] mb-[50px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           About Me
         </p>
@@ -158,7 +163,7 @@ const App = () => {
           <div className="md:pr-[60px] flex justify-center md:justify-start">
             <img
               className="div-shadow md:w-[350px] md:h-[350px] w-[260px] h-[260px] object-cover rounded-[20px]"
-              src={myImg}
+              src={myImg2}
               alt="Galib"
             />
           </div>
@@ -196,7 +201,7 @@ const App = () => {
               <a
                 href={myCV}
                 download={myCV}
-                className="div-shadow bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
+                className="div-shadow bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[1.05] duration-200">
                 <p className="font-[600]">Download CV</p>
                 <FaSheetPlastic className="text-[20px]" />
               </a>
@@ -362,28 +367,28 @@ const App = () => {
       </section>
 
       {/* Skills */}
-      <section className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[130px] md:mt-[200px]">
+      <section id="skills" className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[70px] pt-[60px] md:mt-[140px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           Skills
         </p>
         <p className="text-center">My technical lavel</p>
         <div className="div-shadow my-[40px] md:my-[60px] md:pm-[60px] bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
           <div className="flex flex-col gap-[15px]">
-            <Skill name="HTML" percent={80} />
-            <Skill name="CSS" percent={85} />
-            <Skill name="SASS" percent={75} />
-            <Skill name="JavaScript" percent={75} />
-            <Skill name="React" percent={70} />
-            <Skill name="Redux" percent={70} />
-            <Skill name="Git" percent={80} />
+            <Skill name="HTML" percent={"80%"} />
+            <Skill name="CSS" percent={"85%"} />
+            <Skill name="SASS" percent={"75%"} />
+            <Skill name="JavaScript" percent={"75%"} />
+            <Skill name="React" percent={"70%"} />
+            <Skill name="Redux" percent={"70%"} />
+            <Skill name="Git" percent={"80%"} />
           </div>
           <div className="flex flex-col gap-[15px]">
-            <Skill name="Tailwind" percent={85} />
-            <Skill name="Material Design" percent={70} />
-            <Skill name="Ant Design" percent={65} />
-            <Skill name="REST / API" percent={80} />
-            <Skill name="TypeScript" percent={55} />
-            <Skill name="Next.js" percent={50} />
+            <Skill name="Tailwind" percent={"85%"} />
+            <Skill name="Material Design" percent={"70%"} />
+            <Skill name="Ant Design" percent={"65%"} />
+            <Skill name="REST / API" percent={"80%"} />
+            <Skill name="TypeScript" percent={"55%"} />
+            <Skill name="Next.js" percent={"50%"} />
             {/* <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
               <div className="col-start-1 row-start-1 row-end-2 px-[10px] flex items-center">
                 <BsFillPatchCheckFill />
@@ -508,18 +513,8 @@ const App = () => {
         </div>
       </section>
 
-      {/* <div className="p-[50px] bg-black/10">
-        <div className="border w-[300px] h-[250px] overflow-hidden relative ee">
-          <img
-          className="pr"
-            src="https://www.stefantopalovic.com/static/media/car-rental-full.c58b37da333d73238fdd.webp"
-            alt=""
-          />
-        </div>
-      </div> */}
-
       {/* Projects */}
-      <section className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[130px] md:mt-[200px]">
+      <section id="projects" className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[70px] pt-[60px] md:mt-[140px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           Portfolio
         </p>
@@ -580,13 +575,13 @@ const App = () => {
                 <a
                   href="https://github.com/galibibr/next-store-amazon"
                   target="_blank"
-                  className="flex items-center gap-[5px] hover:text-black hover:scale-[0.95] duration-300">
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
                   Code <FiGithub className="text-[22px]" />
                 </a>
                 <a
                   href="https://next-store-amazon.vercel.app/"
                   target="_blank"
-                  className="flex items-center gap-[5px] hover:text-black hover:scale-[0.95] duration-300">
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
                   Live Demo <RiExternalLinkLine className="text-[24px]" />
                 </a>
               </div>
@@ -594,6 +589,40 @@ const App = () => {
           </div>
         </div>
       </section>
+
+      {/* Contans */}
+      <section id="contacts" className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[17px] pt-[60px] md:mt-[140px]">
+        <p className="text-center md:text-[38px] text-[30px] font-[600]">
+          Contact Me
+        </p>
+        <p className="text-center">Get in touch</p>
+        <div className="my-[40px] md:my-[60px] grid md:grid-cols-3 gap-[30px]">
+          <div className="rounded-[20px] div-shadow p-[20px] bg-white flex flex-col gap-[5px] items-center">
+            <MdOutlineAttachEmail className="text-[32px]"/>
+            <p className="text-[18px] font-[600]">Email</p>
+            <a className="underline hover:text-black duration-300" href="mailto:galibiavi4@gmail.com">galibiavi4@gmail.com</a>
+          </div>
+          <div className="rounded-[20px] div-shadow p-[20px] bg-white flex flex-col gap-[5px] items-center">
+            <FaWhatsapp className="text-[32px]"/>
+            <p className="text-[18px] font-[600]">WhatsApp</p>
+            <a className="underline hover:text-black duration-300" href="whatsapp://+79533201232">+7 953 320-12-32</a>
+          </div>
+          <div className="rounded-[20px] div-shadow p-[20px] bg-white flex flex-col gap-[5px] items-center">
+            <PiTelegramLogoBold className="text-[32px]"/>
+            <p className="text-[18px] font-[600]">Telegram</p>
+            <a className="underline hover:text-black duration-300" href="https://t.me/galibibr" target="_blank">
+              @galibibr
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-[50px] px-[25px] bg-[#2d2e32]">
+        <p className="text-center text-white font-[600]">
+          Copyright © 2023. All rights are reserved
+        </p>
+      </footer>
     </div>
   );
 };

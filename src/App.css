@@ -13,7 +13,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .im {
-   background-image: url('assets/Me.png');
+   /* background-image: url('assets/Me.png'); */
+   background-image: url('assets/0011.jpg');
+   /* background-image: url('assets/03.jpg'); */
    width: 350px;
    height: 350px;
    /* filter: grayscale(20%); */

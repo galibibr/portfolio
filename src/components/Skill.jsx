@@ -11,10 +11,10 @@ const Skill = ({name, percent}) => {
       <div className="col-start-2 row-start-2 flex items-center gap-[5px]">
         <div className="w-full bg-[#2d2e32] p-[2px] rounded-full">
           <div className="rounded-full bg-white">
-            <div className={`w-[${percent}%] bg-[#2d2e32] p-[3px]`}></div>
+            <div className={`w-[${percent}] bg-[#2d2e32] p-[3px]`}></div>
           </div>
         </div>
-        <p className="text-[14px] leading-[0px]">{percent}%</p>
+        <p className="text-[14px] leading-[0px]">{percent}</p>
       </div>
     </div>
   );
