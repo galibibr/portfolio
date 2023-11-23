@@ -12,9 +12,10 @@ import { FaSheetPlastic } from "react-icons/fa6";
 import myCV from "./assets/Galib Ibragimov CV .pdf";
 import Skill from "./components/Skill";
 import { BsFillPatchCheckFill } from "react-icons/bs";
-import amazon from './assets/projects/amazon.png'
-import amazon2 from './assets/projects/amazon2.png'
-
+import amazon from "./assets/projects/amazon.png";
+import amazon2 from "./assets/projects/amazon2.png";
+import { FiGithub } from "react-icons/fi";
+import { RiExternalLinkLine } from "react-icons/ri";
 
 // text color #2d2e32
 
@@ -104,7 +105,7 @@ const App = () => {
               <a
                 href="https://t.me/galibibr"
                 target="_blank"
-                className="bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
+                className="div-shadow bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
                 <p className="font-[600]">Say Hello</p>
                 <FaTelegramPlane className="text-[20px]" />
               </a>
@@ -146,7 +147,7 @@ const App = () => {
         </div>
       )}
       {/* About me */}
-      <section className="max-w-[1000px] mx-auto px-[25px] mb-[50px]">
+      <section className="md:max-w-[1000px] max-w-[550px] mx-auto px-[25px] mb-[50px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           About Me
         </p>
@@ -154,28 +155,28 @@ const App = () => {
         <div className="grid md:gap-0 gap-[40px] md:grid-cols-2 py-[40px] md:py-[60px]">
           <div className="md:pr-[60px] flex justify-center md:justify-start">
             <img
-              className="md:w-[350px] md:h-[350px] w-[260px] h-[260px] object-cover rounded-[20px]"
+              className="div-shadow md:w-[350px] md:h-[350px] w-[260px] h-[260px] object-cover rounded-[20px]"
               src={myImg}
               alt="Galib"
             />
           </div>
           <div className="flex flex-col justify-between gap-[25px] md:gap-0 text-center md:text-start">
             <div className="grid grid-cols-3 gap-[10px]">
-              <div className="border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
+              <div className="div-shadow border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
                 <PiMedal className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Experience</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
                   3 + Years
                 </p>
               </div>
-              <div className="border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
+              <div className="div-shadow border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
                 <MdOutlineWorkOutline className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Completed</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
                   14 + Projects
                 </p>
               </div>
-              <div className="border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
+              <div className="div-shadow border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
                 <BiSupport className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Support</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
@@ -193,7 +194,7 @@ const App = () => {
               <a
                 href={myCV}
                 download={myCV}
-                className="bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
+                className="div-shadow bg-[#2d2e32] text-white flex items-center px-[22px] py-[14px] md:px-[26px] md:py-[17px] gap-[7px] rounded-[15px] text-[14px] hover:bg-black hover:scale-[0.95] duration-200">
                 <p className="font-[600]">Download CV</p>
                 <FaSheetPlastic className="text-[20px]" />
               </a>
@@ -203,12 +204,12 @@ const App = () => {
       </section>
 
       {/* Skills */}
-      <section className="max-w-[1000px] px-[25px] mx-auto mt-[80px] md:mt-[150px]">
+      <section className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[80px] md:mt-[150px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           Skills
         </p>
         <p className="text-center">My technical lavel</p>
-        <div className="my-[40px] md:my-[60px] md:pm-[60px] border bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
+        <div className="div-shadow my-[40px] md:my-[60px] md:pm-[60px] border bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
           <div className="flex flex-col gap-[15px]">
             <Skill name="HTML" percent={80} />
             <Skill name="CSS" percent={85} />
@@ -360,18 +361,78 @@ const App = () => {
       </div> */}
 
       {/* Projects */}
-      <section className="max-w-[1000px] px-[25px] mx-auto mt-[130px] md:mt-[200px]">
+      <section className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[130px] md:mt-[200px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           Portfolio
         </p>
         <p className="text-center">Most recent work</p>
         <div className="my-[40px] md:my-[60px]">
           {/* amazon */}
-          <div className="p-[20px] div-amazon rounded-[20px] grid grid-cols-[55%_35%] gap-[10%] bg-white">
-            <div className="w-auto h-[360px] box-amazon overflow-hidden rounded-[20px]">
+          <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
+            {/* photo */}
+            <a
+              href="https://next-store-amazon.vercel.app/"
+              target="_blank"
+              className="w-auto h-[360px] box-amazon overflow-hidden rounded-[20px]">
               <img src={amazon2} className="img-amazon" alt="amazon web" />
+            </a>
+            {/* info */}
+            <div className="text-center flex md:text-[17px] pt-[20px] px-[20px] gap-[8px] flex-col justify-around md:pl-[40px] md:pr-[20px]">
+              <p>
+                <b>AMAZON</b>{" "}
+                <span className="text-[14px]">(OCTOBER 2023)</span>
+              </p>
+              <p className="leading-[22px]">
+                Online shopping is a form of e-commerce that allows consumers to
+                directly purchase goods or services from a seller online using a
+                web browser or mobile application.
+              </p>
+              {/* skills */}
+              <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=nextjs"
+                  />
+                  <b>Next.js</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=typescript"
+                  />
+                  <b>TypeScript</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=tailwind"
+                  />
+                  <b>Tailwind</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=redux"
+                  />
+                  <b>Redux</b>
+                </p>
+              </div>
+              <div className="flex justify-evenly">
+                <a
+                  href="https://github.com/galibibr/next-store-amazon"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[0.95] duration-300">
+                  Code <FiGithub className="text-[22px]" />
+                </a>
+                <a
+                  href="https://next-store-amazon.vercel.app/"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[0.95] duration-300">
+                  Live Demo <RiExternalLinkLine className="text-[24px]" />
+                </a>
+              </div>
             </div>
-            <div className="border"></div>
           </div>
         </div>
       </section>

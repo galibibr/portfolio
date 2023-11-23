@@ -65,7 +65,7 @@ body::-webkit-scrollbar-thumb {
    border-radius: 10px;
 } */
 
-.div-amazon {
+.div-amazon, .div-shadow {
    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
 .box-amazon {
@@ -73,8 +73,8 @@ body::-webkit-scrollbar-thumb {
 }
 .img-amazon {
    transform: translateY(0%);
-   transition: 10s ease-in-out 0s;
+   transition: 5s ease-in-out 0s;
 }
 .img-amazon:hover {
-   transform: translateY(-100%);
+   transform: translateY(-71%);
 }
