@@ -445,7 +445,7 @@ const App = () => {
           Qualification
         </p>
         <p className="text-center">My persolnal journey</p>
-        <div className="my-[40px] md:my-[60px] grid md:grid-cols-2 gap-[30px]">
+        <div className="my-[40px] md:my-[60px] grid md:grid-cols-2 gap-[50px] md:gap-[30px]">
           {/* ///////// */}
           <div className="">
             <p className="flex justify-center items-center gap-[5px] text-[20px] font-[600]">
@@ -454,7 +454,7 @@ const App = () => {
             </p>
             <div className="div-shadow grid grid-cols-2 relative mt-[25px] bg-white rounded-[20px] p-[20px]">
               {/* line */}
-              <div className="absolute top-0 w-full h-full grid grid-cols-2 pt-[25px] pb-[170px] md:pb-[190px]">
+              <div className="absolute top-0 w-full h-full grid grid-cols-2 pt-[25px] ">
                 <div className="border-r border-[#5b5c5f] w-full h-full"></div>
                 <div className="border-l border-[#5b5c5f] w-full h-full"></div>
               </div>
@@ -473,7 +473,7 @@ const App = () => {
                     <FaRegCalendarAlt />
                     2019-2023
                   </p>
-                  <div className="p-[9px] top-[5px] right-[-40px] rounded-full bg-[#5b5c5f] absolute"></div>
+                  <div className="p-[7px] md:p-[9px] top-[5px] right-[-37px] md:right-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
                 </div>
               </div>
               {/* Ilmhona */}
@@ -499,7 +499,7 @@ const App = () => {
                     <FaRegCalendarAlt />
                     10/2022-12/2022
                   </p>
-                  <div className="p-[9px] top-[3px] left-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
+                  <div className="p-[7px] md:p-[9px] top-[3px] left-[-37px] md:left-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
                 </div>
               </div>
               {/* SoftClub */}
@@ -534,7 +534,7 @@ const App = () => {
                     <FaRegCalendarAlt />
                     01/2023-09/2023
                   </p>
-                  <div className="p-[9px] top-[5px] right-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
+                  <div className="md:p-[9px] p-[7px] top-[5px] right-[-37px] md:right-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
                 </div>
               </div>
             </div>
@@ -547,7 +547,7 @@ const App = () => {
             </p>
             <div className="div-shadow grid grid-cols-2 relative mt-[25px] bg-white rounded-[20px] p-[20px]">
               {/* line */}
-              <div className="absolute top-0 w-full h-full grid grid-cols-2 pt-[25px] pb-[100px]">
+              <div className="absolute top-0 w-full h-full grid grid-cols-2 pt-[25px]">
                 <div className="border-r border-[#5b5c5f] w-full h-full"></div>
                 <div className="border-l border-[#5b5c5f] w-full h-full"></div>
               </div>
@@ -567,7 +567,7 @@ const App = () => {
                     <FaRegCalendarAlt />
                     01/2020-06/2023
                   </p>
-                  <div className="p-[9px] top-[5px] right-[-40px] rounded-full bg-[#5b5c5f] absolute"></div>
+                  <div className="md:p-[9px] p-[7px] top-[5px] right-[-37px] md:right-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
                 </div>
               </div>
               {/* Navoar */}
@@ -583,7 +583,7 @@ const App = () => {
                     <FaRegCalendarAlt />
                     09/2021-06/2023
                   </p>
-                  <div className="p-[9px] top-[3px] left-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
+                  <div className="md:p-[9px] p-[7px] top-[3px] left-[-37px] md:left-[-39px] rounded-full bg-[#5b5c5f] absolute"></div>
                 </div>
               </div>
             </div>
