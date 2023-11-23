@@ -12,6 +12,8 @@ import { FaSheetPlastic } from "react-icons/fa6";
 import myCV from "./assets/Galib Ibragimov CV .pdf";
 import Skill from "./components/Skill";
 import { BsFillPatchCheckFill } from "react-icons/bs";
+import amazon from './assets/projects/amazon.png'
+import amazon2 from './assets/projects/amazon2.png'
 
 
 // text color #2d2e32
@@ -206,7 +208,7 @@ const App = () => {
           Skills
         </p>
         <p className="text-center">My technical lavel</p>
-        <div className="my-[40px] md:pm-[60px] border bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
+        <div className="my-[40px] md:my-[60px] md:pm-[60px] border bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
           <div className="flex flex-col gap-[15px]">
             <Skill name="HTML" percent={80} />
             <Skill name="CSS" percent={85} />
@@ -356,6 +358,23 @@ const App = () => {
           />
         </div>
       </div> */}
+
+      {/* Projects */}
+      <section className="max-w-[1000px] px-[25px] mx-auto mt-[130px] md:mt-[200px]">
+        <p className="text-center md:text-[38px] text-[30px] font-[600]">
+          Portfolio
+        </p>
+        <p className="text-center">Most recent work</p>
+        <div className="my-[40px] md:my-[60px]">
+          {/* amazon */}
+          <div className="p-[20px] div-amazon rounded-[20px] grid grid-cols-[55%_35%] gap-[10%] bg-white">
+            <div className="w-auto h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              <img src={amazon2} className="img-amazon" alt="amazon web" />
+            </div>
+            <div className="border"></div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
