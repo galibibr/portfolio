@@ -77,9 +77,9 @@ const App = () => {
         </button>
       </nav>
       {/* Header */}
-      <header>
+      <header className="min-h-screen pt-[100px] pb-[30px] md:pb-0">
         {/* info */}
-        <div className="md:max-w-[1000px] max-w-[550px] mt-[100px] mx-auto px-[25px] gap-[40px] md:gap-0 md:py-[80px] mb-[100px] flex flex-col-reverse md:grid md:grid-cols-2">
+        <div className="md:max-w-[1000px] max-w-[550px] mx-auto px-[25px] gap-[40px] md:gap-0 md:py-[80px] mb-[100px] flex flex-col-reverse md:grid md:grid-cols-2">
           <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
             <p className="md:text-[56px] text-[38px] font-[700] leading-[44px] md:leading-[70px]">
               Front-End React Developer
@@ -162,21 +162,21 @@ const App = () => {
           </div>
           <div className="flex flex-col justify-between gap-[25px] md:gap-0 text-center md:text-start">
             <div className="grid grid-cols-3 gap-[10px]">
-              <div className="div-shadow border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
+              <div className="div-shadow rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
                 <PiMedal className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Experience</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
                   3 + Years
                 </p>
               </div>
-              <div className="div-shadow border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
+              <div className="div-shadow rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
                 <MdOutlineWorkOutline className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Completed</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
                   14 + Projects
                 </p>
               </div>
-              <div className="div-shadow border rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
+              <div className="div-shadow rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
                 <BiSupport className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Support</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
@@ -209,7 +209,7 @@ const App = () => {
           Skills
         </p>
         <p className="text-center">My technical lavel</p>
-        <div className="div-shadow my-[40px] md:my-[60px] md:pm-[60px] border bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
+        <div className="div-shadow my-[40px] md:my-[60px] md:pm-[60px] bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
           <div className="flex flex-col gap-[15px]">
             <Skill name="HTML" percent={80} />
             <Skill name="CSS" percent={85} />
