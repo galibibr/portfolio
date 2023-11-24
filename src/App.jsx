@@ -126,7 +126,7 @@ const App = () => {
       </header>
       {/* modal menu */}
       {modal && (
-        <div className="fixed top-0 z-30 w-full h-screen overflow-y-hidden bg-white py-[9px] px-[35px]">
+        <div className="fixed top-0 z-30 w-full h-screen overflow-y-hidde bg-[#fafafa] py-[9px] px-[35px]">
           <div className="flex justify-end">
             <button
               onClick={() => setModal(false)}
@@ -134,7 +134,7 @@ const App = () => {
               <IoClose />
             </button>
           </div>
-          <ul className="flex flex-col items-center justify-center h-full gap-[30px] text-[24px] font-[600]">
+          <ul className="flex flex-col items-center pb-[100px] justify-center h-full gap-[30px] text-[24px] font-[600]">
             <li>
               <a href="#home" onClick={() => setModal(false)}>Home</a>
             </li>
@@ -618,8 +618,8 @@ const App = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-[50px] px-[25px] bg-[#2d2e32]">
-        <p className="text-center text-white font-[600]">
+      <footer className="md:py-[50px] py-[20px] px-[25px] bg-[#2d2e32]">
+        <p className="text-center text-white font-[500] md:text-[14px] text-[12px]">
           Copyright © 2023. All rights are reserved
         </p>
       </footer>
