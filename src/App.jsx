@@ -23,7 +23,6 @@ import { MdOutlineAttachEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { PiTelegramLogoBold } from "react-icons/pi";
 
-
 // text color #2d2e32
 
 const App = () => {
@@ -98,7 +97,8 @@ const App = () => {
             <div className="flex items-center gap-[20px]">
               <div className="flex gap-2 text-[24px] md:text-[30px]">
                 <a
-                  href="#"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/galib-ibragimov-317261234/"
                   className="hover:text-black hover:scale-[1.1] duration-200">
                   <FaLinkedinIn />
                 </a>
@@ -126,7 +126,7 @@ const App = () => {
       </header>
       {/* modal menu */}
       {modal && (
-        <div className="fixed top-0 z-30 w-full h-screen overflow-y-hidde bg-[#fafafa] py-[9px] px-[35px]">
+        <div className="fixed top-0 z-30 anim w-full h-screen overflow-y-hidde bg-[#fafafa] py-[9px] px-[35px]">
           <div className="flex justify-end">
             <button
               onClick={() => setModal(false)}
@@ -136,25 +136,37 @@ const App = () => {
           </div>
           <ul className="flex flex-col items-center pb-[100px] justify-center h-full gap-[30px] text-[24px] font-[600]">
             <li>
-              <a href="#home" onClick={() => setModal(false)}>Home</a>
+              <a href="#home" onClick={() => setModal(false)}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#about" onClick={() => setModal(false)}>About</a>
+              <a href="#about" onClick={() => setModal(false)}>
+                About
+              </a>
             </li>
             <li>
-              <a href="#skills" onClick={() => setModal(false)}>Skills</a>
+              <a href="#skills" onClick={() => setModal(false)}>
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#projects" onClick={() => setModal(false)}>Projects</a>
+              <a href="#projects" onClick={() => setModal(false)}>
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contacts" onClick={() => setModal(false)}>Contacts</a>
+              <a href="#contacts" onClick={() => setModal(false)}>
+                Contacts
+              </a>
             </li>
           </ul>
         </div>
       )}
       {/* About me */}
-      <section id="about" className="md:max-w-[1000px] pt-[60px] max-w-[550px] mx-auto px-[25px] mb-[50px]">
+      <section
+        id="about"
+        className="md:max-w-[1000px] pt-[60px] max-w-[550px] mx-auto px-[25px] mb-[50px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           About Me
         </p>
@@ -367,7 +379,9 @@ const App = () => {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[70px] pt-[60px] md:mt-[140px]">
+      <section
+        id="skills"
+        className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[70px] pt-[60px] md:mt-[140px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           Skills
         </p>
@@ -514,7 +528,9 @@ const App = () => {
       </section>
 
       {/* Projects */}
-      <section id="projects" className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[70px] pt-[60px] md:mt-[140px]">
+      <section
+        id="projects"
+        className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[70px] pt-[60px] md:mt-[140px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           Portfolio
         </p>
@@ -591,26 +607,39 @@ const App = () => {
       </section>
 
       {/* Contans */}
-      <section id="contacts" className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[17px] pt-[60px] md:mt-[140px]">
+      <section
+        id="contacts"
+        className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[17px] pt-[60px] md:mt-[140px]">
         <p className="text-center md:text-[38px] text-[30px] font-[600]">
           Contact Me
         </p>
         <p className="text-center">Get in touch</p>
         <div className="my-[40px] md:my-[60px] grid md:grid-cols-3 gap-[30px]">
           <div className="rounded-[20px] div-shadow p-[20px] bg-white flex flex-col gap-[5px] items-center">
-            <MdOutlineAttachEmail className="text-[32px]"/>
+            <MdOutlineAttachEmail className="text-[32px]" />
             <p className="text-[18px] font-[600]">Email</p>
-            <a className="underline hover:text-black duration-300" href="mailto:galibiavi4@gmail.com">galibiavi4@gmail.com</a>
+            <a
+              className="underline hover:text-black duration-300"
+              href="mailto:galibiavi4@gmail.com">
+              galibiavi4@gmail.com
+            </a>
           </div>
           <div className="rounded-[20px] div-shadow p-[20px] bg-white flex flex-col gap-[5px] items-center">
-            <FaWhatsapp className="text-[32px]"/>
+            <FaWhatsapp className="text-[32px]" />
             <p className="text-[18px] font-[600]">WhatsApp</p>
-            <a className="underline hover:text-black duration-300" href="whatsapp://+79533201232">+7 953 320-12-32</a>
+            <a
+              className="underline hover:text-black duration-300"
+              href="whatsapp://+79533201232">
+              +7 953 320-12-32
+            </a>
           </div>
           <div className="rounded-[20px] div-shadow p-[20px] bg-white flex flex-col gap-[5px] items-center">
-            <PiTelegramLogoBold className="text-[32px]"/>
+            <PiTelegramLogoBold className="text-[32px]" />
             <p className="text-[18px] font-[600]">Telegram</p>
-            <a className="underline hover:text-black duration-300" href="https://t.me/galibibr" target="_blank">
+            <a
+              className="underline hover:text-black duration-300"
+              href="https://t.me/galibibr"
+              target="_blank">
               @galibibr
             </a>
           </div>
