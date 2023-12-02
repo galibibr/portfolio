@@ -78,7 +78,7 @@ const App = () => {
         {/* menu */}
         <button
           onClick={() => setModal(true)}
-          className="text-[28px] flex md:hidden hover:text-black hover:scale-[0.90] duration-200">
+          className="text-[28px] flex md:hidden hover:text-black hover:scale-[1.1] duration-200">
           <HiOutlineMenu />
         </button>
       </nav>
@@ -130,7 +130,7 @@ const App = () => {
           <div className="flex justify-end">
             <button
               onClick={() => setModal(false)}
-              className="text-[32px]  hover:text-black hover:scale-[0.90] duration-200">
+              className="text-[32px]  hover:text-black hover:scale-[1.1] duration-200">
               <IoClose />
             </button>
           </div>
