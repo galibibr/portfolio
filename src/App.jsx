@@ -15,6 +15,7 @@ import Skill from "./components/Skill";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import amazon from "./assets/projects/amazon.png";
 import amazon2 from "./assets/projects/amazon2.png";
+import flash_pizza from "./assets/projects/frash-pizza.png";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { PiStudentBold } from "react-icons/pi";
@@ -535,7 +536,7 @@ const App = () => {
           Portfolio
         </p>
         <p className="text-center">Most recent work</p>
-        <div className="my-[40px] md:my-[60px]">
+        <div className="my-[40px] md:my-[60px] flex flex-col gap-[30px]">
           {/* amazon */}
           <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
             {/* photo */}
@@ -596,6 +597,75 @@ const App = () => {
                 </a>
                 <a
                   href="https://next-store-amazon.vercel.app/"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Live Demo <RiExternalLinkLine className="text-[24px]" />
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* frash pizza */}
+          <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
+            {/* photo */}
+            <a
+              href="https://flash-pizza.vercel.app/"
+              target="_blank"
+              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              <img src={flash_pizza} className="img-amazon" alt="amazon web" />
+            </a>
+            {/* info */}
+            <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pl-[40px] md:pr-[20px]">
+              <p>
+                <b>FLASH PIZZA</b>{" "}
+                <span className="text-[14px]">(DECEMBER 2023)</span>
+              </p>
+              <p className="leading-[22px]">
+                Pizza delivery is a service in which pizza is delivered to the
+                customer at the address specified by him within a certain period
+                of time.
+                Delivery costs may vary or are already included in the price of
+                the pizza.
+              </p>
+              {/* skills */}
+              <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=react"
+                  />
+                  <b>React</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=javascript"
+                  />
+                  <b>JavaScript</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=sass"
+                  />
+                  <b>Sass</b>
+                </p>
+                {/* <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=redux"
+                  />
+                  <b>Redux</b>
+                </p> */}
+              </div>
+              <div className="flex justify-evenly">
+                <a
+                  href="https://github.com/galibibr/flash-pizza"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Code <FiGithub className="text-[22px]" />
+                </a>
+                <a
+                  href="https://flash-pizza.vercel.app/"
                   target="_blank"
                   className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
                   Live Demo <RiExternalLinkLine className="text-[24px]" />
