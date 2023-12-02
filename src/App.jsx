@@ -390,17 +390,17 @@ const App = () => {
           <div className="flex flex-col gap-[15px]">
             <Skill name="HTML" percent={"80%"} />
             <Skill name="CSS" percent={"85%"} />
-            <Skill name="SASS" percent={"75%"} />
+            <Skill name="Sass" percent={"75%"} />
             <Skill name="JavaScript" percent={"75%"} />
             <Skill name="React" percent={"70%"} />
             <Skill name="Redux" percent={"70%"} />
             <Skill name="Git" percent={"80%"} />
           </div>
           <div className="flex flex-col gap-[15px]">
-            <Skill name="Tailwind" percent={"85%"} />
-            <Skill name="Material Design" percent={"70%"} />
+            <Skill name="Tailwind CSS" percent={"85%"} />
+            <Skill name="Material UI" percent={"70%"} />
             <Skill name="Ant Design" percent={"65%"} />
-            <Skill name="REST / API" percent={"80%"} />
+            <Skill name="REST API" percent={"80%"} />
             <Skill name="TypeScript" percent={"55%"} />
             <Skill name="Next.js" percent={"50%"} />
             {/* <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
