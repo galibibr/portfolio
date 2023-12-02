@@ -536,7 +536,7 @@ const App = () => {
           Portfolio
         </p>
         <p className="text-center">Most recent work</p>
-        <div className="my-[40px] md:my-[60px] flex flex-col gap-[30px]">
+        <div className="my-[40px] md:my-[60px] flex flex-col gap-[40px]">
           {/* amazon */}
           <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
             {/* photo */}
@@ -605,14 +605,7 @@ const App = () => {
             </div>
           </div>
           {/* frash pizza */}
-          <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
-            {/* photo */}
-            <a
-              href="https://flash-pizza.vercel.app/"
-              target="_blank"
-              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
-              <img src={flash_pizza} className="img-amazon" alt="amazon web" />
-            </a>
+          <div className="p-[20px] div-amazon rounded-[20px] flex flex-col-reverse md:grid md:grid-cols-[40%_60%] bg-white">
             {/* info */}
             <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pl-[40px] md:pr-[20px]">
               <p>
@@ -622,9 +615,8 @@ const App = () => {
               <p className="leading-[22px]">
                 Pizza delivery is a service in which pizza is delivered to the
                 customer at the address specified by him within a certain period
-                of time.
-                Delivery costs may vary or are already included in the price of
-                the pizza.
+                of time. Delivery costs may vary or are already included in the
+                price of the pizza.
               </p>
               {/* skills */}
               <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
@@ -672,6 +664,13 @@ const App = () => {
                 </a>
               </div>
             </div>
+            {/* photo */}
+            <a
+              href="https://flash-pizza.vercel.app/"
+              target="_blank"
+              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              <img src={flash_pizza} className="img-amazon" alt="amazon web" />
+            </a>
           </div>
         </div>
       </section>
