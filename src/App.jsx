@@ -577,7 +577,7 @@ const App = () => {
                     className="w-[20px]"
                     src="https://skillicons.dev/icons?i=tailwind"
                   />
-                  <b>Tailwind</b>
+                  <b>Tailwind CSS</b>
                 </p>
                 <p className="flex gap-[3px]">
                   <img
