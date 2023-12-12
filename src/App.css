@@ -73,11 +73,14 @@ body::-webkit-scrollbar-thumb {
 .box-amazon {
    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
-.img-amazon {
+.img-amazon, .img-carland {
    transform: translateY(0%);
    transition: 5s ease-in-out 0s;
 }
 .img-amazon:hover {
    transform: translateY(-71%);
+}
+.img-carland:hover {
+   transform: translateY(-80%);
 }
 
