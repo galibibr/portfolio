@@ -37,7 +37,7 @@ const App = () => {
       }`}>
       {/* Nav */}
       <nav className="shadow-[0px_0px_10px_0.1px] shadow-black/10 flex justify-between fixed top-0 z-30 w-full px-[35px] py-[10px] bg-nav">
-        <a href="/" className="text-[22px] font-[700]">
+        <a translate="no" href="/" className="text-[22px] font-[700]">
           Galib.dev
         </a>
         <ul className="hidden md:flex items-center gap-[20px] text-[18px] font-[600]">
