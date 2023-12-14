@@ -31,13 +31,13 @@ const App = () => {
   const [modal, setModal] = useState(false);
 
   return (
-    <div
+    <div translate="no"
       className={`text-[#2d2e32] ${
         modal ? "overflow-hidden" : "overflow-auto"
       }`}>
       {/* Nav */}
       <nav className="shadow-[0px_0px_10px_0.1px] shadow-black/10 flex justify-between fixed top-0 z-30 w-full px-[35px] py-[10px] bg-nav">
-        <a translate="no" href="/" className="text-[22px] font-[700]">
+        <a href="/" className="text-[22px] font-[700]">
           Galib.dev
         </a>
         <ul className="hidden md:flex items-center gap-[20px] text-[18px] font-[600]">
