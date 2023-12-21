@@ -799,7 +799,7 @@ const App = () => {
             <a
               href="https://coutries.vercel.app/"
               target="_blank"
-              className="w-auto h-[240px] lg:h-[280px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[240px] lg:h-[270px] box-amazon overflow-hidden rounded-[20px]">
               <img src={
                 
                 countries
