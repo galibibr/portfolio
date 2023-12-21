@@ -550,7 +550,7 @@ const App = () => {
             <a
               href="https://next-store-amazon.vercel.app/"
               target="_blank"
-              className="w-auto h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
               <img src={amazon2} className="img-amazon" alt="amazon web" />
             </a>
             {/* info */}
@@ -667,7 +667,7 @@ const App = () => {
             <a
               href="https://carland-tau.vercel.app/"
               target="_blank"
-              className="w-auto h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[160px] sm:h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
               <img src={carland} className="img-carland" alt="amazon web" />
             </a>
           </div>
@@ -679,7 +679,7 @@ const App = () => {
             <a
               href="https://flash-pizza.vercel.app/"
               target="_blank"
-              className="w-auto h-[240px] lg:h-[270px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[160px] sm:h-[240px] lg:h-[270px] box-amazon overflow-hidden rounded-[20px]">
               <img src={flash_pizza} className="img-amazon" alt="amazon web" />
             </a>
             {/* info */}
@@ -795,7 +795,7 @@ const App = () => {
             <a
               href="https://coutries.vercel.app/"
               target="_blank"
-              className="w-auto h-[240px] lg:h-[270px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto box-amazon overflow-hidden rounded-[20px]">
               <img src={
                 
                 countries
