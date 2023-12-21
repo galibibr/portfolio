@@ -17,9 +17,7 @@ import amazon from "./assets/projects/amazon.png";
 import amazon2 from "./assets/projects/amazon2.png";
 import flash_pizza from "./assets/projects/frash-pizza.png";
 import carland from "./assets/projects/carland.png";
-import countries1 from "./assets/projects/countries.png";
-import countries2 from "./assets/projects/countries2.png";
-import countries3 from "./assets/projects/countries3.png";
+import countries from "./assets/projects/countries.png";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { PiStudentBold } from "react-icons/pi";
@@ -804,7 +802,7 @@ const App = () => {
               className="w-auto h-[240px] lg:h-[260px] box-amazon overflow-hidden rounded-[20px]">
               <img src={
                 
-                countries2
+                countries
               } className="" alt="amazon web" />
             </a>
           </div>
