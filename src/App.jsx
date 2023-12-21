@@ -550,7 +550,7 @@ const App = () => {
             <a
               href="https://next-store-amazon.vercel.app/"
               target="_blank"
-              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
               <img src={amazon2} className="img-amazon" alt="amazon web" />
             </a>
             {/* info */}
@@ -561,8 +561,7 @@ const App = () => {
               </p>
               <p className="leading-[22px]">
                 Online shopping is a form of e-commerce that allows consumers to
-                directly purchase goods or services from a seller online using a
-                web browser or mobile application.
+                directly.
               </p>
               {/* skills */}
               <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
@@ -623,8 +622,7 @@ const App = () => {
               </p>
               <p className="leading-[22px]">
                 A car rental website is an online platform that allows users to
-                rent cars for personal or business use. The website provides an
-                interface for searching, comparing, and reserving cars.
+                rent cars for personal or business use. 
               </p>
               {/* skills */}
               <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
@@ -669,7 +667,7 @@ const App = () => {
             <a
               href="https://carland-tau.vercel.app/"
               target="_blank"
-              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[240px] lg:h-[270px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
               <img src={carland} className="img-carland" alt="amazon web" />
             </a>
           </div>
@@ -681,7 +679,7 @@ const App = () => {
             <a
               href="https://flash-pizza.vercel.app/"
               target="_blank"
-              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[240px] lg:h-[270px] box-amazon overflow-hidden rounded-[20px]">
               <img src={flash_pizza} className="img-amazon" alt="amazon web" />
             </a>
             {/* info */}
@@ -692,9 +690,7 @@ const App = () => {
               </p>
               <p className="leading-[22px]">
                 Pizza delivery is a service in which pizza is delivered to the
-                customer at the address specified by him within a certain period
-                of time. Delivery costs may vary or are already included in the
-                price of the pizza.
+                customer.
               </p>
               {/* skills */}
               <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
