@@ -17,6 +17,9 @@ import amazon from "./assets/projects/amazon.png";
 import amazon2 from "./assets/projects/amazon2.png";
 import flash_pizza from "./assets/projects/frash-pizza.png";
 import carland from "./assets/projects/carland.png";
+import countries1 from "./assets/projects/countries.png";
+import countries2 from "./assets/projects/countries2.png";
+import countries3 from "./assets/projects/countries3.png";
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { PiStudentBold } from "react-icons/pi";
@@ -28,6 +31,11 @@ import { PiTelegramLogoBold } from "react-icons/pi";
 // text color #2d2e32
 
 const App = () => {
+  let imgCountries = 1
+  setInterval(function() {
+    if (imgCountries < 4) imgCountries += 1
+    else imgCountries = 1
+  }, 2000)
   const [modal, setModal] = useState(false);
 
   return (
@@ -605,6 +613,7 @@ const App = () => {
               </div>
             </div>
           </div>
+
           {/* carland */}
           {/* <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white"> */}
           <div className="p-[20px] div-carland rounded-[20px] flex flex-col-reverse md:grid md:grid-cols-[40%_60%] bg-white">
@@ -666,6 +675,7 @@ const App = () => {
               <img src={carland} className="img-carland" alt="amazon web" />
             </a>
           </div>
+
           {/* frash pizza */}
           {/* <div className="p-[20px] div-amazon rounded-[20px] flex flex-col-reverse md:grid md:grid-cols-[40%_60%] bg-white"> */}
           <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
@@ -734,6 +744,69 @@ const App = () => {
                 </a>
               </div>
             </div>
+          </div>
+
+          {/* countries */}
+          {/* <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white"> */}
+          <div className="p-[20px] div-carland rounded-[20px] flex flex-col-reverse md:grid md:grid-cols-[40%_60%] bg-white">
+            {/* info */}
+            <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pr-[40px] md:pl-[20px]">
+              <p>
+                <b>COUNTRIES</b>{" "}
+                <span className="text-[14px]">(DECEMBER 2023)</span>
+              </p>
+              <p className="leading-[22px]">
+                Countries of the World.
+              </p>
+              {/* skills */}
+              <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=html"
+                  />
+                  <b>NTML5</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=css"
+                  />
+                  <b>CSS3</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=javascript"
+                  />
+                  <b>JavaScript</b>
+                </p>
+              </div>
+              <div className="flex justify-evenly">
+                <a
+                  href="https://github.com/galibibr/countries"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Code <FiGithub className="text-[22px]" />
+                </a>
+                <a
+                  href="https://coutries.vercel.app/"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Live Demo <RiExternalLinkLine className="text-[24px]" />
+                </a>
+              </div>
+            </div>
+            {/* photo */}
+            <a
+              href="https://coutries.vercel.app/"
+              target="_blank"
+              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              <img src={
+                
+                countries2
+              } className="" alt="amazon web" />
+            </a>
           </div>
         </div>
       </section>
