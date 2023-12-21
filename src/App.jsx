@@ -801,7 +801,7 @@ const App = () => {
             <a
               href="https://coutries.vercel.app/"
               target="_blank"
-              className="w-auto h-[220px] md:h-[360px] box-amazon overflow-hidden rounded-[20px]">
+              className="w-auto h-[240px] box-amazon overflow-hidden rounded-[20px]">
               <img src={
                 
                 countries2
