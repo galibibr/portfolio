@@ -99,7 +99,7 @@ const App = () => {
               Front-End React Developer
             </p>
             <p className="text-[#555] md:text-[17px] text-[15px] md:px-0 px-[20px] font-[500]">
-              Hi, I'm Galib Ibragimov. A passionate Front-end React Developer
+              Hi, I'm Gholibjoni Ibrohimzoda. A passionate Front-end React Developer
               based in Russia.
             </p>
             <div className="flex items-center gap-[20px]">
