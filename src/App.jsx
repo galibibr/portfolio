@@ -200,7 +200,7 @@ const App = () => {
                 <MdOutlineWorkOutline className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Completed</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
-                  14 + Projects
+                  4 + Projects
                 </p>
               </div>
               <div className="div-shadow rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
