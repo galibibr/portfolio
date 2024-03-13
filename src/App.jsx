@@ -10,7 +10,7 @@ import { PiMedal } from "react-icons/pi";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { BiSupport } from "react-icons/bi";
 import { FaSheetPlastic } from "react-icons/fa6";
-import myCV from "./assets/Gholibjoni Ibrohimzoda CV.pdf";
+import myCV from "./assets/ Голибджони Иброхимзода.pdf";
 import Skill from "./components/Skill";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import amazon from "./assets/projects/amazon.png";
