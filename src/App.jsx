@@ -28,6 +28,7 @@ import { PiTelegramLogoBold } from "react-icons/pi";
 
 // text color #2d2e32
 
+
 const App = () => {
   let imgCountries = 1
   setInterval(function() {
