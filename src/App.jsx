@@ -100,8 +100,8 @@ const App = () => {
               Front-End React Developer
             </p>
             <p className="text-[#555] md:text-[17px] text-[15px] md:px-0 px-[20px] font-[500]">
-              Hi, I'm Gholibjoni Ibrohimzoda. A passionate Front-end React Developer
-              based in Russia.
+              Hi, I'm Gholibjoni Ibrohimzoda. A am Front-end React Developer
+              from Tajikistan.
             </p>
             <div className="flex items-center gap-[20px]">
               <div className="flex gap-2 text-[24px] md:text-[30px]">
@@ -194,7 +194,7 @@ const App = () => {
                 <PiMedal className="text-[20px] md:text-[24px]" />
                 <p className="font-[600] md:text-[18px] mt-[4px]">Experience</p>
                 <p className="md:text-[14px] text-[11px] text-center w-full">
-                  3 + Years
+                  1 + Years
                 </p>
               </div>
               <div className="div-shadow rounded-[8px] md:p-[20px] p-[10px] flex bg-white flex-col items-center">
