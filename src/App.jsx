@@ -674,137 +674,6 @@ const App = () => {
             </a>
           </div>
 
-          {/* frash pizza */}
-          {/* <div className="p-[20px] div-amazon rounded-[20px] flex flex-col-reverse md:grid md:grid-cols-[40%_60%] bg-white"> */}
-          <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
-            {/* photo */}
-            <a
-              href="https://flash-pizza.vercel.app/"
-              target="_blank"
-              className="w-auto h-[160px] sm:h-[240px] lg:h-[270px] box-amazon overflow-hidden rounded-[20px]">
-              <img src={flash_pizza} className="img-amazon" alt="amazon web" />
-            </a>
-            {/* info */}
-            <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pl-[40px] md:pr-[20px]">
-              <p>
-                <b>FLASH PIZZA</b>{" "}
-                <span className="text-[14px]">(DECEMBER 2023)</span>
-              </p>
-              <p className="leading-[22px]">
-                Pizza delivery is a service in which pizza is delivered to the
-                customer.
-              </p>
-              {/* skills */}
-              <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
-                <p className="flex gap-[3px]">
-                  <img
-                    className="w-[20px]"
-                    src="https://skillicons.dev/icons?i=react"
-                  />
-                  <b>React</b>
-                </p>
-                <p className="flex gap-[3px]">
-                  <img
-                    className="w-[20px]"
-                    src="https://skillicons.dev/icons?i=javascript"
-                  />
-                  <b>JavaScript</b>
-                </p>
-                <p className="flex gap-[3px]">
-                  <img
-                    className="w-[20px]"
-                    src="https://skillicons.dev/icons?i=sass"
-                  />
-                  <b>Sass</b>
-                </p>
-                {/* <p className="flex gap-[3px]">
-                  <img
-                    className="w-[20px]"
-                    src="https://skillicons.dev/icons?i=redux"
-                  />
-                  <b>Redux</b>
-                </p> */}
-              </div>
-              <div className="flex justify-evenly">
-                <a
-                  href="https://github.com/galibibr/flash-pizza"
-                  target="_blank"
-                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
-                  Code <FiGithub className="text-[22px]" />
-                </a>
-                <a
-                  href="https://flash-pizza.vercel.app/"
-                  target="_blank"
-                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
-                  Live Demo <RiExternalLinkLine className="text-[24px]" />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* countries */}
-          {/* <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white"> */}
-          <div className="p-[20px] div-carland rounded-[20px] flex flex-col-reverse md:grid md:grid-cols-[40%_60%] bg-white">
-            {/* info */}
-            <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pr-[40px] md:pl-[20px]">
-              <p>
-                <b>COUNTRIES</b>{" "}
-                <span className="text-[14px]">(DECEMBER 2023)</span>
-              </p>
-              <p className="leading-[22px]">
-                Countries of the World.
-              </p>
-              {/* skills */}
-              <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
-                <p className="flex gap-[3px]">
-                  <img
-                    className="w-[20px]"
-                    src="https://skillicons.dev/icons?i=html"
-                  />
-                  <b>NTML5</b>
-                </p>
-                <p className="flex gap-[3px]">
-                  <img
-                    className="w-[20px]"
-                    src="https://skillicons.dev/icons?i=css"
-                  />
-                  <b>CSS3</b>
-                </p>
-                <p className="flex gap-[3px]">
-                  <img
-                    className="w-[20px]"
-                    src="https://skillicons.dev/icons?i=javascript"
-                  />
-                  <b>JavaScript</b>
-                </p>
-              </div>
-              <div className="flex justify-evenly">
-                <a
-                  href="https://github.com/galibibr/countries"
-                  target="_blank"
-                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
-                  Code <FiGithub className="text-[22px]" />
-                </a>
-                <a
-                  href="https://coutries.vercel.app/"
-                  target="_blank"
-                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
-                  Live Demo <RiExternalLinkLine className="text-[24px]" />
-                </a>
-              </div>
-            </div>
-            {/* photo */}
-            <a
-              href="https://coutries.vercel.app/"
-              target="_blank"
-              className="w-auto box-amazon overflow-hidden rounded-[20px]">
-              <img src={
-                
-                countries
-              } className="" alt="amazon web" />
-            </a>
-          </div>
-
           {/* tvoe live */}
           <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
             {/* photo */}
@@ -870,6 +739,72 @@ const App = () => {
               </div>
             </div>
           </div>
+
+
+          {/* countries */}
+          {/* <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white"> */}
+          <div className="p-[20px] div-carland rounded-[20px] flex flex-col-reverse md:grid md:grid-cols-[40%_60%] bg-white">
+            {/* info */}
+            <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pr-[40px] md:pl-[20px]">
+              <p>
+                <b>COUNTRIES</b>{" "}
+                <span className="text-[14px]">(DECEMBER 2023)</span>
+              </p>
+              <p className="leading-[22px]">
+                Countries of the World.
+              </p>
+              {/* skills */}
+              <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=html"
+                  />
+                  <b>NTML5</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=css"
+                  />
+                  <b>CSS3</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=javascript"
+                  />
+                  <b>JavaScript</b>
+                </p>
+              </div>
+              <div className="flex justify-evenly">
+                <a
+                  href="https://github.com/galibibr/countries"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Code <FiGithub className="text-[22px]" />
+                </a>
+                <a
+                  href="https://coutries.vercel.app/"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Live Demo <RiExternalLinkLine className="text-[24px]" />
+                </a>
+              </div>
+            </div>
+            {/* photo */}
+            <a
+              href="https://coutries.vercel.app/"
+              target="_blank"
+              className="w-auto box-amazon overflow-hidden rounded-[20px]">
+              <img src={
+                
+                countries
+              } className="" alt="amazon web" />
+            </a>
+          </div>
+
+
         </div>
       </section>
 
