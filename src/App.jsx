@@ -18,6 +18,7 @@ import amazon2 from "./assets/projects/amazon2.png";
 import flash_pizza from "./assets/projects/frash-pizza.png";
 import carland from "./assets/projects/carland.png";
 import countries from "./assets/projects/countries.png";
+import tvoe_live from './assets/projects/tvoe-live.png'
 import { FiGithub } from "react-icons/fi";
 import { RiExternalLinkLine } from "react-icons/ri";
 import { PiStudentBold } from "react-icons/pi";
@@ -802,6 +803,72 @@ const App = () => {
                 countries
               } className="" alt="amazon web" />
             </a>
+          </div>
+
+          {/* tvoe live */}
+          <div className="p-[20px] div-amazon rounded-[20px] grid md:grid-cols-[60%_40%] bg-white">
+            {/* photo */}
+            <a
+              href="https://tvoe-live-task.vercel.app/"
+              target="_blank"
+              className="w-auto h-[160px] sm:h-[240px] lg:h-[270px] box-amazon overflow-hidden rounded-[20px]">
+              <img src={tvoe_live} className="img-amazon" alt="tvoe-live" />
+            </a>
+            {/* info */}
+            <div className="text-center flex md:text-[17px] pt-[20px] md:pt-0 gap-[8px] flex-col justify-around md:pl-[40px] md:pr-[20px]">
+              <p>
+                <b>TVOE.LIVE</b>{" "}
+                <span className="text-[14px]">(APRIL 2024)</span>
+              </p>
+              <p className="leading-[22px]">
+              A portal for watching movies online.
+              </p>
+              {/* skills */}
+              <div className="flex flex-wrap text-[16px] justify-center gap-y-[5px] gap-x-[15px]">
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=nextjs"
+                  />
+                  <b>Next.js</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=typescript"
+                  />
+                  <b>TypeScript</b>
+                </p>
+                <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=sass"
+                  />
+                  <b>Sass</b>
+                </p>
+                {/* <p className="flex gap-[3px]">
+                  <img
+                    className="w-[20px]"
+                    src="https://skillicons.dev/icons?i=redux"
+                  />
+                  <b>Redux</b>
+                </p> */}
+              </div>
+              <div className="flex justify-evenly">
+                <a
+                  href="https://github.com/galibibr/tvoe-live-task"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Code <FiGithub className="text-[22px]" />
+                </a>
+                <a
+                  href="https://tvoe-live-task.vercel.app/"
+                  target="_blank"
+                  className="flex items-center gap-[5px] hover:text-black hover:scale-[1.05] duration-300">
+                  Live Demo <RiExternalLinkLine className="text-[24px]" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
