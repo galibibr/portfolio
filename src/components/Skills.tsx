@@ -1,23 +1,31 @@
-import React from "react";
-import { BsFillPatchCheckFill } from "react-icons/bs";
+import Skill from "@/components/Skill";
 
-const Skill = ({ name, percent }: any) => {
+export const Skills = () => {
    return (
-      <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
-         <div className="col-start-1 row-start-1 row-end-2 pr-[10px] flex items-center">
-            <BsFillPatchCheckFill />
-         </div>
-         <p className="col-start-2 text-[18px] font-[600]">{name}</p>
-         <div className="col-start-2 row-start-2 flex items-center gap-[5px]">
-            <div className="w-full bg-[#2d2e32] p-[2px] rounded-full">
-               <div className="rounded-full bg-white">
-                  <div className={`w-[${percent}] bg-[#2d2e32] p-[3px]`}></div>
-               </div>
+      <section
+         id="skills"
+         className="md:max-w-[1000px] max-w-[550px] px-[25px] mx-auto mt-[70px] pt-[60px] md:mt-[140px]">
+         <p className="text-center md:text-[38px] text-[30px] font-[600]">Skills</p>
+         <p className="text-center">My technical lavel</p>
+         <div className="div-shadow my-[40px] md:my-[60px] md:pm-[60px] bg-white rounded-[20px] p-[25px] md:p-[30px] lg:p-[60px] grid md:grid-cols-2 gap-x-[35px] md:gap-x-[60px] gap-y-[15px] md:gap-y-0">
+            <div className="flex flex-col gap-[15px]">
+               <Skill name="HTML" percent={"80%"} />
+               <Skill name="CSS" percent={"85%"} />
+               <Skill name="Sass" percent={"75%"} />
+               <Skill name="JavaScript" percent={"75%"} />
+               <Skill name="React" percent={"70%"} />
+               <Skill name="Redux" percent={"70%"} />
+               <Skill name="Git" percent={"80%"} />
             </div>
-            <p className="text-[14px] leading-[0px]">{percent}</p>
+            <div className="flex flex-col gap-[15px]">
+               <Skill name="Tailwind CSS" percent={"85%"} />
+               <Skill name="Material UI" percent={"70%"} />
+               <Skill name="Ant Design" percent={"65%"} />
+               <Skill name="REST API" percent={"80%"} />
+               <Skill name="TypeScript" percent={"55%"} />
+               <Skill name="Next.js" percent={"50%"} />
+            </div>
          </div>
-      </div>
+      </section>
    );
 };
-
-export default Skill;

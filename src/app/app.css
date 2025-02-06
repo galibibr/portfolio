@@ -14,7 +14,7 @@ body::-webkit-scrollbar-thumb {
 
 .im {
    /* background-image: url('assets/Me.png'); */
-   background-image: url('@/assets/0011.jpg');
+   background-image: url('../assets/0011.jpg');
    /* background-image: url('assets/03.jpg'); */
    width: 350px;
    height: 350px;
@@ -48,24 +48,6 @@ body::-webkit-scrollbar-thumb {
    backdrop-filter: saturate(180%) blur(5px);
    background: hsla(0, 0%, 100%, .8);
 }
-
-/* .pr {
-   transform: translateY(0%);
-   transition:  10s ease-in-out 0s;
-}
-.pr:hover {
-   transform: translateY(-90%);
-} */
-
-/* .ee::-webkit-scrollbar {
-   width: 8px;
-   background: white;
-}
-
-.ee::-webkit-scrollbar-thumb {
-   background: #929292;
-   border-radius: 10px;
-} */
 
 .div-amazon, .div-shadow, .div-carland {
    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
