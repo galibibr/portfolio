@@ -104,12 +104,12 @@ export const Header = () => {
          {/* info */}
          <div className="md:max-w-[1000px] max-w-[550px] mx-auto px-[25px] gap-[40px] md:gap-0 md:py-[80px] mb-[100px] flex flex-col-reverse md:grid md:grid-cols-2">
             <div className="flex flex-col justify-center text-center md:text-start items-center md:items-start gap-[22px]">
-               <p className="md:text-[56px] text-[38px] font-[700] leading-[44px] md:leading-[70px]">
+               <h1 className="md:text-[56px] text-[38px] font-[700] leading-[44px] md:leading-[70px]">
                   Front-End React Developer
-               </p>
-               <p className="text-[#555] md:text-[17px] text-[15px] md:px-0 px-[20px] font-[500]">
-                  Hi, I&apos;m Galib Ibragimov. A am Front-end React Developer from Tajikistan.
-               </p>
+               </h1>
+               <h2 className="text-[#555] md:text-[17px] text-[15px] md:px-0 px-[20px] font-[500]">
+                  Hi, I&apos;m Gholibjoni Ibrohimzoda. A am Front-end React Developer from Tajikistan.
+               </h2>
                <div className="flex items-center gap-[20px]">
                   <div className="flex gap-2 text-[24px] md:text-[30px]">
                      <Link

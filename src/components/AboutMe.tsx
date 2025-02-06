@@ -18,7 +18,7 @@ export const AboutMe = () => {
                <Image
                   src={myImg2}
                   className="div-shadow md:w-[350px] md:h-[350px] w-[260px] h-[260px] object-cover rounded-[20px]"
-                  alt="Galib"
+                  alt="Gholibjoni Ibrohimzoda Front-end Developer"
                />
             </div>
             <div className="flex flex-col justify-between gap-[25px] md:gap-0 text-center md:text-start">
