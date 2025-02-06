@@ -1,3 +1,5 @@
+"use client";
+
 import "./app.css";
 import { AboutMe } from "@/components/AboutMe";
 import { Qualification } from "@/components/Qualification";
